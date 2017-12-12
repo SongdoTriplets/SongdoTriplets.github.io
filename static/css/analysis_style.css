@@ -1411,3 +1411,8 @@ form label {
 }
 
 /*# sourceMappingURL=style.css.map */
+
+img {
+  width: 100% !important;
+  height: 100% !important;
+}
