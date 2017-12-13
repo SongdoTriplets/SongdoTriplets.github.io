@@ -1,0 +1,11 @@
+.nav {
+  background-color: white;
+  z-index: 1000;
+}
+body {
+  position: relative;
+  top: 42px;
+}
+.sticky-top {
+  top: 42px;
+}

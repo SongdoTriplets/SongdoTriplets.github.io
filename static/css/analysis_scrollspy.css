@@ -30,17 +30,20 @@
     -webkit-transition: .5s all ease-out;
     -moz-transition: .5s all ease-out;
     transition: .5s all ease-out;
-    border-top: 3px solid white;
-    color: #aaa;
+    /*border-top: 3px solid white;*/
+    color: #000;
     text-decoration: none;
 }
 
 #top-menu a:hover {
-    color: #000;
+    color: #fff;
 }
 
 #top-menu li.active {
-    // border-top: 3px solid #333;
-    background-color: #333;
-    color: #333;
+    /*border-top: 3px solid #333;*/
+    background-color: #0023af;
+}
+
+#top-menu li.active a{
+    color: #fff;
 }
