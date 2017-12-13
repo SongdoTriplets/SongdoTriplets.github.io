@@ -14,18 +14,22 @@
 
 #top-menu{
   display: flex;
-  justify-content: flex-end;
   list-style-type: none;
+  justify-content: flex-end;
+}
+
+#tohome {
+  align-items: flex-start !important;
 }
 
 #top-menu li {
-    float: left;
+  float: left;
 }
 
 #top-menu a {
     display: block;
     padding: 5px 25px 7px 25px;
-    width: 4em;
+    width: 6em;
     text-align: center;
     -webkit-transition: .5s all ease-out;
     -moz-transition: .5s all ease-out;
