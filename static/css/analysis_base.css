@@ -12,9 +12,8 @@ body {
   top: 42px;
 }
 
-.wordcloud {
-  padding-top: 10px;
+#cloud2 {
   width: 500px;
   height: 500px;
-  background-color: gray;
+  background-color: none;
 }

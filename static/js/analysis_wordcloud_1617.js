@@ -20,7 +20,7 @@ d3.csv("data/count_noun_1617.csv", function(d) {
       .on("end", draw)
       .start();
     function draw(words) {
-      d3.select("#cloud").append("svg")
+      d3.select("#cloud3").append("svg")
           .attr("width", width)
           .attr("height", height)
         .append("g")

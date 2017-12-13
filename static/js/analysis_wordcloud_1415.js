@@ -8,7 +8,7 @@ d3.csv("data/count_noun_1415.csv", function(d) {
       size: +d.freq * weight
     }
   },
-
+  
   function(data) {
     data.sort(function(a, b) { return b.size - a.size})
     data = data.slice(0, 300) // changed
@@ -20,7 +20,7 @@ d3.csv("data/count_noun_1415.csv", function(d) {
       .on("end", draw)
       .start();
     function draw(words) {
-      d3.select("#cloud").append("svg")
+      d3.select("#cloud2").append("svg")
           .attr("width", width)
           .attr("height", height)
         .append("g")

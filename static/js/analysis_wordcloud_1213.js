@@ -2,7 +2,7 @@ var weight = 0.009,   // changed
     width = 500, // changed
     height =500;
 var fill = d3.scaleOrdinal(d3.schemeCategory20);
-d3.csv("static/data/count_noun_1213.csv", function(d) {
+d3.csv("data/count_noun_1213.csv", function(d) {
     return {
       text: d.word,
       size: +d.freq * weight
@@ -20,7 +20,7 @@ d3.csv("static/data/count_noun_1213.csv", function(d) {
       .on("end", draw)
       .start();
     function draw(words) {
-      d3.select("#cloud").append("svg")
+      d3.select("#cloud1").append("svg")
           .attr("width", width)
           .attr("height", height)
         .append("g")
