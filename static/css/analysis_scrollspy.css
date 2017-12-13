@@ -19,7 +19,7 @@
 }
 
 #tohome {
-  align-items: flex-start !important;
+  justify-content: flex-start !important;
 }
 
 #top-menu li {
@@ -28,9 +28,9 @@
 
 #top-menu a {
     display: block;
-    padding: 5px 25px 7px 25px;
-    width: 6em;
-    text-align: center;
+    padding: 5px 0px 7px 25px;
+    width: 5em;
+    text-align: left;
     -webkit-transition: .5s all ease-out;
     -moz-transition: .5s all ease-out;
     transition: .5s all ease-out;
