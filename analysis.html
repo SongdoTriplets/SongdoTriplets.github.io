@@ -7,7 +7,8 @@
   <link rel="stylesheet" href="static/css/analysis_style.css">
   <link rel="stylesheet" href="static/css/analysis_scrollspy.css">
   <link rel="stylesheet" href="static/css/analysis_base.css">
-  <link rel="stylesheet" href="static/css/analysis_wordcloud.css">
+  <link rel="stylesheet" href="static/css/wordcloud.css">
+
 </head>
 
 <body class="container">
@@ -110,11 +111,11 @@
     <div class="sticky-top">
       <h1> sticky top! </h1>
     </div>
-
-    <!-- <div id="cloud1"></div> -->
-    <div id="cloud2"></div>
-    <!-- <div id="cloud3"></div> -->
-
+    <div class="wordclouds">
+      <div id="cloud1"></div>
+      <div id="cloud2"></div>
+      <div id="cloud3"></div>
+    </div>
     <p>
       The passport ices the liquor. His doubtful ladder mills the misery. A milk relaxes opposite the bell! Below the bit electronics clogs a later mania. The chap towers around the careless symphony. The enhanced trace forbids the ridiculous panel.
       The passport ices the liquor. His doubtful ladder mills the misery. A milk relaxes opposite the bell! Below the bit electronics clogs a later mania. The chap towers around the careless symphony. The enhanced trace forbids the ridiculous panel.
@@ -241,10 +242,13 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
   <script src="static/js/analysis_jquery.min.js"></script>
   <script src="static/js/analysis_scrollspy.js"></script>
-  <script src="https://d3js.org/d3.v4.min.js"></script>
+  <script src="http://d3js.org/d3.v4.min.js" charset="utf-8"></script>
   <script src="static/js/analysis_d3.layout.cloud.js"></script>
-  <!-- <script src="static/js/analysis_wordcloud_1213.js"></script> -->
-  <script src="static/js/analysis_wordcloud_1415.js"></script>
-  <!-- <script src="static/js/analysis_wordcloud_1617.js"></script> -->
+  <script src="static/js/analysis_wordcloud.js"></script>
+  <script>
+  wordcloud('#cloud1', 'static/data/count_noun_1213.csv', 0.0090);
+  wordcloud('#cloud2', 'static/data/count_noun_1415.csv', 0.0035);
+  wordcloud('#cloud3', 'static/data/count_noun_1617.csv', 0.0017);
+  </script>
 </body>
 </html>
