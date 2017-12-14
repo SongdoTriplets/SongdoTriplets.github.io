@@ -5,12 +5,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
   <title>대한민국송도만세</title>
 
+  <!-- <link rel="stylesheet" href="static/css/analysis_style.css"> -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
-
-  <link rel="stylesheet" href="static/css/analysis_style.css">
   <link rel="stylesheet" href="static/css/analysis_scrollspy.css">
   <link rel="stylesheet" href="static/css/analysis_base.css">
   <link rel="stylesheet" href="static/css/spark_style.css">
+  <link rel="stylesheet" href="static/css/analysis_leaflet.css">
+
 </head>
 
 <body class="container">
@@ -25,9 +26,6 @@
     </li>
     <li class="left">
       <a href="#sectionthree">3rd</a>
-    </li>
-    <li class="left">
-      <a href="#sectionfour">4th</a>
     </li>
   </ul>
 
@@ -68,15 +66,16 @@
   <div>
     <a id="sectiontwo"> </a>
     <h1>송도의 과거와 현재는??</h1>
-    <div class="sticky-top">
-      <h1> 검색량그래프 여기 들어가야함 </h1>
-    </div>
+    <!-- <div class="sticky-top">
+      <h1> 검색량 그래프</h1>
+    </div> -->
+
     <p>
       신도시, 아파트, 공원, 분양 등 부동산 관련된 키워드는 12년도부터 현재까지 지속적으로 인기를 얻고 있는 것을 알 수 있고 절대적인 키워드의 양은 훨씬 늘어나는 추세입니다.
     </p>
-    <div class="wordclouds">
-      <div id="cloud1"></div>
-      <div id="cloud3"></div>
+    <div class="wordclouds d-flex flex-row">
+      <div id="cloud1" class="p-2"><h2 class="text-center">삼둥이 방영 전</h2></div>
+      <div id="cloud3" class="p-2"><h2 class="text-center">삼둥이 방영 후</h2></div>
     </div>
 
     <div id="P_reamore01" data-children=".item">
@@ -110,12 +109,12 @@
 
   <div>
     <!-- sparkline 합쳐진거 넣어야함  -->
-    1. 송도전체 검색량
-    2. 분양건수
-    3. 송도 블로그 검색량
-    4. 송도 인구
-    5. 유동 인구
-    6. 프랜차이즈점 수
+    1. 송도전체 검색량 <br>
+    2. 분양건수 <br>
+    3. 송도 블로그 검색량 <br>
+    4. 송도 인구 <br>
+    5. 유동 인구 <br>
+    6. 프랜차이즈점 수 <br>
   </div>
     <p>
        12년부터 17년 동안 ‘송도’라는 키워드의 검색량, 송도의 분양 건수와 거주 인구 등이 상승했고, 특히 14년도부터 16년도 방송 기간에는 삼둥이 방영 기간 중 더 탄력을 받아 상승했던 것을 확인 할 수 있습니다. 송도 검색량, 분양 건수, 송도 거주 인구 등은 모두 회귀 분석에 사용한 변수들입니다.
@@ -133,12 +132,38 @@
       </div>
     </div>
 
-  <div class="wordclouds">
-    <div id="cloud2"></div>
-  </div>
+    <div id="carouselExampleControls1" class="carousel slide" data-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <h4>분석 순서</h4>
+          <img class="d-block w-100" src="static/images/explanation.png" alt="유령도시 송도">
+          <div class="carousel-caption d-none d-md-block">
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="wordclouds">
+            <div id="cloud2"><h4>방영 중 블로그 워드클라우드</h4></div>
+          </div>
+          <div class="carousel-caption d-none d-md-block">
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleControls1" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleControls1" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+    </div>
+
   <p>
     분석 결과를 간단히 정리하면 위의 그래프가 나옵니다. 다음은 슈퍼맨이 돌아왔다 방영 기간중(14-16년)의 워드클라우드 입니다. 위에 확인했던 워드클라우드와 다르게 삼둥이가 나온 모습을 확인할 수 있습니다. 이런 회귀 분석 결과와 워드클라우드를 통해 저희 팀은 삼둥이로 시작된 나비효과가 송도의 변화에 영향을 주었을 수 있다라고 결과를 해석했습니다.
   </p>
+  <!-- <div class="sticky-top">
+    <h1> 검색량그래프 여기 들어가야함 </h1>
+  </div> -->
   <div id="P_reamore04" data-children=".item">
     <div class="item">
       <a data-toggle="collapse" data-parent="#P_reamore04" href="#reamore04" aria-expanded="false" aria-controls="P_reamore04">
@@ -155,11 +180,14 @@
     </div>
   </div>
   <div>
-    <!-- "송도" 단어 검색량 그래프 -->
+    <h4>검색량 스파크라인 그래프</h4>
+    <img src="static/images/sparkline_blog.png" alt="검색량 스파크라인 그래프">
   </div>
-  <div>
-    <!-- 범프차트 -->
-  </div>
+
+  <a>
+    <h4>범프 차트</h4>
+     <div id="plotly-div"></div>
+  </a>
   <p>
     범프차트로 다시 한번 확인을 해보면 아까 워드클라우드로 나왔던 양상이 좀 더 요약되서 보여지는 것을 알 수 있습니다.
   </p>
@@ -167,8 +195,21 @@
   <h1>얼마나 늘었을까요?</h1>
   <div>사업체수 그래프</div>
 
+  <!-- <div class="sticky-top">
+    <h1> 부동산 그래프 </h1>
+  </div> -->
+
   <p> 친구 중 한명이 학교가 송도에 있어서 4년 전에 놀러 갔던 기억이 나네요. 그때만 해도 송도라는 지역이 너무 생소했고 실제 사람들도 별로 안 보여 휑했던 것 같아요. 그 당시에 친구가 과외나 학원 등에서 아르바이트를 하려 해도 교육 인프라가 부족하고, 큰 마트도 없어 많이 불평 했던 게 생각이 납니다. 그렇다면 현재 송도는 어떻게 바뀌었을까요?</p>
-  <div>매핑그래프</div>
+
+  <div>
+    <input type="range" value="0" min="0" max="2" id="opdateFilter" list="tickmarks">
+    <datalist id="tickmarks">
+      <option value="0"></option>
+      <option value="1"></option>
+      <option value="2"></option>
+    </datalist>
+    <div id="map" style="width: 600px; height: 430px"></div>
+  </div>
 
   <h1>마무리 제목 넣기</h1>
   <p>전통적으로 지가나, 부동산 관련 지수는 ~~~~에 영향을 받았습니다. 하지만 송도의 지가지수나 유동인구 데이터가 변화하는 것을 보면서 삼둥이라는 미디어 매체의 영향력을 확인할 수 있었습니다.
@@ -180,16 +221,15 @@
   <div>
     <a id="sectionthree"> </a>
     <h2>THREE</h2>
-    <div class="sticky-top">
-      <h1 id="parcel">분양</h1>
-      <div class="js-report-sparkline"></div>
-    </div>
+    <!-- <div class="sticky-top"> -->
+      <!-- <h1 id="parcel">분양</h1> -->
+      <!-- 일단은 사진으로 대체하고 나중에 d3 버전 문제 해결할 것 -->
+      <!-- <div class="js-report-sparkline"></div> -->
+      <h5>분양률 그래프</h5>
+      <img src="static/images/parcel.png" alt="분양률 데이터">
+    <!-- </div> -->
   </div>
-  <div>
-    <a id="sectionfour"></a>
-    <h2>FOUR</h2>
-  </div>
-</div>
+
 
 <!-- 만든 사람들 버튼  -->
 <div class="d-flex justify-content-center">
@@ -199,19 +239,20 @@
 <div class="row copyright">
   <div class="col-md-12">
     <p class="pull-left">
-      <small class="block"> 데잇걸즈 돈벌조팀 대한민국송도만세 프로젝트</small>
+      <small class="block"> 데잇걸즈 "신혜한수"팀 대한민국송도만세 프로젝트</small>
     </p>
   </div>
 </div>
 
+<!-- script  -->
+<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
 
-<!-- <script src="https://d3js.org/d3-hierarchy.v1.min.js"></script> -->
 <script src="https://d3js.org/d3.v3.min.js"></script>
-<!-- <script src="https://d3js.org/d3.v4.min.js"></script> -->
 <script src="static/js/analysis_jquery.min.js"></script>
+<script src="static/js/leaflet.js"></script>
 <script src="static/js/analysis_d3.layout.cloud.js"></script>
 <script src="static/js/analysis_wordcloud.js"></script>
 
@@ -220,10 +261,12 @@ wordcloud('#cloud1', 'static/data/count_noun_1213.csv', 0.0090);
 wordcloud('#cloud2', 'static/data/count_noun_1415.csv', 0.0035);
 wordcloud('#cloud3', 'static/data/count_noun_1617.csv', 0.0017);
 </script>
-<script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
 
 <script  src="static/js/spark_index.js"></script>
 <script src="static/js/analysis_scrollspy.js"></script>
+<script src="static/js/analysis_map.js"></script>
+<script src="static/js/analysis_BumpChart.js"></script>
 
 </body>
 </html>
