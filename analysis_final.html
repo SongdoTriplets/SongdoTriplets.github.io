@@ -1,5 +1,3 @@
-<!-- 이건 발표용으로 그림으로만 일단 떼운 것 -->
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -71,14 +69,14 @@
     <a id="sectiontwo"> </a>
     <h1>송도의 과거와 현재는??</h1>
     <div class="sticky-top">
-      <h1> 검색량 그래프</h1>
+      <h1> 검색량그래프 여기 들어가야함 </h1>
     </div>
     <p>
       신도시, 아파트, 공원, 분양 등 부동산 관련된 키워드는 12년도부터 현재까지 지속적으로 인기를 얻고 있는 것을 알 수 있고 절대적인 키워드의 양은 훨씬 늘어나는 추세입니다.
     </p>
-    <div class="wordclouds d-flex flex-row">
-      <div id="cloud1" class="p-2"><h2 class="text-center">삼둥이 방영 전</h2></div>
-      <div id="cloud3" class="p-2"><h2 class="text-center">삼둥이 방영 후</h2></div>
+    <div class="wordclouds">
+      <div id="cloud1"></div>
+      <div id="cloud3"></div>
     </div>
 
     <div id="P_reamore01" data-children=".item">
@@ -135,37 +133,12 @@
       </div>
     </div>
 
-    <div id="carouselExampleControls1" class="carousel slide" data-ride="carousel">
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <img class="d-block w-100" src="static/images/explanation.png" alt="유령도시 송도">
-          <div class="carousel-caption d-none d-md-block">
-          </div>
-        </div>
-        <div class="carousel-item">
-          <div class="wordclouds">
-            <div id="cloud2"></div>
-          </div>
-          <div class="carousel-caption d-none d-md-block">
-          </div>
-        </div>
-        <a class="carousel-control-prev" href="#carouselExampleControls1" role="button" data-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="sr-only">Previous</span>
-        </a>
-        <a class="carousel-control-next" href="#carouselExampleControls1" role="button" data-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="sr-only">Next</span>
-        </a>
-      </div>
-    </div>
-
+  <div class="wordclouds">
+    <div id="cloud2"></div>
+  </div>
   <p>
     분석 결과를 간단히 정리하면 위의 그래프가 나옵니다. 다음은 슈퍼맨이 돌아왔다 방영 기간중(14-16년)의 워드클라우드 입니다. 위에 확인했던 워드클라우드와 다르게 삼둥이가 나온 모습을 확인할 수 있습니다. 이런 회귀 분석 결과와 워드클라우드를 통해 저희 팀은 삼둥이로 시작된 나비효과가 송도의 변화에 영향을 주었을 수 있다라고 결과를 해석했습니다.
   </p>
-  <div class="sticky-top">
-    <h1> 검색량그래프 여기 들어가야함 </h1>
-  </div>
   <div id="P_reamore04" data-children=".item">
     <div class="item">
       <a data-toggle="collapse" data-parent="#P_reamore04" href="#reamore04" aria-expanded="false" aria-controls="P_reamore04">
@@ -182,23 +155,17 @@
     </div>
   </div>
   <div>
-    <img src="static/images/sparkline_blog.png" alt="bumpchart">
+    <!-- "송도" 단어 검색량 그래프 -->
   </div>
-
-  <a href="/">
-    <img src="static/images/bumpchart.png" alt="bumpchart">
-  </a>
-
+  <div>
+    <!-- 범프차트 -->
+  </div>
   <p>
     범프차트로 다시 한번 확인을 해보면 아까 워드클라우드로 나왔던 양상이 좀 더 요약되서 보여지는 것을 알 수 있습니다.
   </p>
 
   <h1>얼마나 늘었을까요?</h1>
   <div>사업체수 그래프</div>
-
-  <div class="sticky-top">
-    <h1> 부동산 그래프 </h1>
-  </div>
 
   <p> 친구 중 한명이 학교가 송도에 있어서 4년 전에 놀러 갔던 기억이 나네요. 그때만 해도 송도라는 지역이 너무 생소했고 실제 사람들도 별로 안 보여 휑했던 것 같아요. 그 당시에 친구가 과외나 학원 등에서 아르바이트를 하려 해도 교육 인프라가 부족하고, 큰 마트도 없어 많이 불평 했던 게 생각이 납니다. 그렇다면 현재 송도는 어떻게 바뀌었을까요?</p>
   <div>매핑그래프</div>
@@ -215,9 +182,7 @@
     <h2>THREE</h2>
     <div class="sticky-top">
       <h1 id="parcel">분양</h1>
-      <!-- 일단은 사진으로 대체하고 나중에 d3 버전 문제 해결할 것 -->
-      <!-- <div class="js-report-sparkline"></div> -->
-      <img src="static/images/parcel.png" alt="분양률 데이터">
+      <div class="js-report-sparkline"></div>
     </div>
   </div>
   <div>
@@ -243,8 +208,8 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
 
-<!-- <script src="https://d3js.org/d3-hierarchy.v1.min.js"></script>
-<script src="https://d3js.org/d3.v3.min.js"></script> -->
+<script src="https://d3js.org/d3-hierarchy.v1.min.js"></script>
+<script src="https://d3js.org/d3.v3.min.js"></script>
 <script src="https://d3js.org/d3.v4.min.js"></script>
 <script src="static/js/analysis_jquery.min.js"></script>
 <script src="static/js/analysis_d3.layout.cloud.js"></script>
