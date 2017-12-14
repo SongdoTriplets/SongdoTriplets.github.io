@@ -1,5 +1,5 @@
-.js-report-sparkline {
-  background: #333;
+.sparkline_search {
+  background-color: #333;
 }
 
 .x-axis .tick {
@@ -44,7 +44,7 @@
   font-size: 12px;
 }
 
-.js-report-sparkline {
+.sparkline_search {
   width: 708px;
   height: 250px;
   margin: 50px auto;
@@ -52,52 +52,52 @@
   position: relative;
 }
 
-.js-report-sparkline * {
+.sparkline_search * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
 
-.js-report-sparkline path {
+.sparkline_search path {
   stroke-width: 3;
   fill: none;
 }
 
-.js-report-sparkline path.area {
+.sparkline_search path.area {
   stroke-width: 0;
   fill: red;
 }
 
-.js-report-sparkline .point {
+.sparkline_search .point {
   stroke-width: 2;
   -webkit-transition: all .3s;
   transition: all .3s;
   opacity: 0;
 }
 
-.js-report-sparkline .point.end {
+.sparkline_search .point.end {
   opacity: 1;
 }
 
-.js-report-sparkline .bar-rect {
+.sparkline_search .bar-rect {
   fill: transparent;
   stroke: none;
 }
 
-.js-report-sparkline .point.hover {
+.sparkline_search .point.hover {
   stroke-width: 7;
   opacity: 1;
 }
 
-.js-report-sparkline .point.end.hover {
+.sparkline_search .point.end.hover {
   stroke-width: 5;
   opacity: 1;
 }
 
-.js-report-sparkline .chart-container {
+.sparkline_search .chart-container {
   position: relative;
 }
 
-.js-report-sparkline .chart-tooltip {
+.sparkline_search .chart-tooltip {
   position: absolute;
   background: white;
   color: #999;
@@ -112,18 +112,18 @@
   -webkit-transition: .25s;
 }
 
-.js-report-sparkline .chart-tooltip .title {
+.sparkline_search .chart-tooltip .title {
   z-index: 3;
   text-transform: uppercase;
   font-size: 13px;
 }
 
-.js-report-sparkline .chart-tooltip.hover {
+.sparkline_search .chart-tooltip.hover {
   margin-top: -10px;
   opacity: 1;
 }
 
-.js-report-sparkline .chart-tooltip:after {
+.sparkline_search .chart-tooltip:after {
   content: '';
   position: absolute;
   top: 100%;
@@ -135,7 +135,7 @@
   border-top: 5px solid white;
 }
 
-.js-report-sparkline .bullet {
+.sparkline_search .bullet {
   width: 8px;
   height: 8px;
   border-radius: 50%;

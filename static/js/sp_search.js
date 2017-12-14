@@ -1,5 +1,5 @@
 // Metric
-$('.js-report-sparkline').each(function(sparklineId) {
+$('.sparkline_search').each(function(sparklineId) {
 
 
   	var th = $(this),
@@ -9,79 +9,19 @@ $('.js-report-sparkline').each(function(sparklineId) {
         // And that breaks scale calculators
         // Also this chain clears the HTML content
         data = [
-          {'date': 'Jan-2012', 'value': 2284},
-          {'date': 'Feb-2012', 'value': 2083},
-          {'date': 'Mar-2012', 'value': 1905},
-          {'date': 'Apr-2012', 'value': 1839},
-          {'date': 'May-2012', 'value': 1919},
-          {'date': 'Jun-2012', 'value': 1816},
-          {'date': 'Jul-2012', 'value': 1635},
-          {'date': 'Aug-2012', 'value': 1660},
-          {'date': 'Sep-2012', 'value': 1698},
-          {'date': 'Oct-2012', 'value': 1986},
-          {'date': 'Nov-2012', 'value': 2258},
-          {'date': 'Dec-2012', 'value': 2328},
-          {'date': 'Jan-2013', 'value': 1645},
-          {'date': 'Feb-2013', 'value': 1768},
-          {'date': 'Mar-2013', 'value': 1258},
-          {'date': 'Apr-2013', 'value': 1463},
-          {'date': 'May-2013', 'value': 1551},
-          {'date': 'Jun-2013', 'value': 1085},
-          {'date': 'Jul-2013', 'value': 1147},
-          {'date': 'Aug-2013', 'value': 1166},
-          {'date': 'Sep-2013', 'value': 1298},
-          {'date': 'Oct-2013', 'value': 1443},
-          {'date': 'Nov-2013', 'value': 1505},
-          {'date': 'Dec-2013', 'value': 664},
-          {'date': 'Jan-2014', 'value': 830},
-          {'date': 'Feb-2014', 'value': 992},
-          {'date': 'Mar-2014', 'value': 1207},
-          {'date': 'Apr-2014', 'value': 1352},
-          {'date': 'May-2014', 'value': 0},
-          {'date': 'Jun-2014', 'value': 274},
-          {'date': 'Jul-2014', 'value': 695},
-          {'date': 'Aug-2014', 'value': 1396},
-          {'date': 'Sep-2014', 'value': 2118},
-          {'date': 'Oct-2014', 'value': 2503},
-          {'date': 'Nov-2014', 'value': 2536},
-          {'date': 'Dec-2014', 'value': 2187},
-          {'date': 'Jan-2015', 'value': 2373},
-          {'date': 'Feb-2015', 'value': 2466},
-          {'date': 'Mar-2015', 'value': 2587},
-          {'date': 'Apr-2015', 'value': 2711},
-          {'date': 'May-2015', 'value': 2349},
-          {'date': 'Jun-2015', 'value': 2763},
-          {'date': 'Jul-2015', 'value': 2819},
-          {'date': 'Aug-2015', 'value': 2879},
-          {'date': 'Sep-2015', 'value': 2904},
-          {'date': 'Oct-2015', 'value': 2930},
-          {'date': 'Nov-2015', 'value': 2823},
-          {'date': 'Dec-2015', 'value': 2853},
-          {'date': 'Jan-2016', 'value': 2868},
-          {'date': 'Feb-2016', 'value': 2918},
-          {'date': 'Mar-2016', 'value': 2919},
-          {'date': 'Apr-2016', 'value': 2922},
-          {'date': 'May-2016', 'value': 2960},
-          {'date': 'Jun-2016', 'value': 2983},
-          {'date': 'Jul-2016', 'value': 2238},
-          {'date': 'Aug-2016', 'value': 2511},
-          {'date': 'Sep-2016', 'value': 3039},
-          {'date': 'Oct-2016', 'value': 3146},
-          {'date': 'Nov-2016', 'value': 3146},
-          {'date': 'Dec-2016', 'value': 3146},
-          {'date': 'Jan-2017', 'value': 2351},
-          {'date': 'Feb-2017', 'value': 2474},
-          {'date': 'Mar-2017', 'value': 2245},
-          {'date': 'Apr-2017', 'value': 2767},
-          {'date': 'May-2017', 'value': 3124},
-          {'date': 'Jun-2017', 'value': 3142},
-          {'date': 'Jul-2017', 'value': 3146},
-          {'date': 'Aug-2017', 'value': 3146},
-          {'date': 'Sep-2017', 'value': 3146}
+        {'date': '2012', 'value': 525011},
+        {'date': '2013', 'value': 882198},
+        {'date': '2014', 'value': 1301011},
+        {'date': '2015', 'value': 1785420},
+        {'date': '2016', 'value': 2391658},
+        {'date': '2017', 'value': 2846752}
+
+
+
 
         ];
   		 console.log(data);
-        var parseDate = d3.time.format("%b-%Y");
+        var parseDate = d3.time.format("%Y");
 
         data.forEach(function(d) {
             d.date = parseDate.parse(d.date);
@@ -102,7 +42,7 @@ $('.js-report-sparkline').each(function(sparklineId) {
         // Scale functions
         // Setting the range with the margin
         y = d3.scale.linear()
-                    .domain([0, 3000])
+                    .domain([500000, 3000000])
                     .range([h - yMargin, yMargin]),
         x = d3.time.scale()
         					 .domain(d3.extent(data, function(d) { return d.date; }))
@@ -112,7 +52,7 @@ $('.js-report-sparkline').each(function(sparklineId) {
         // Calculating the color according to data in the range of colors
         // That user has passed with the data-range-[high-low]-color attributes
         gradientY = d3.scale.linear()
-                            .domain([0,500,1000,2000,2500,3000]) .range(['#e86e6b','#e86e6c','#fcd56b','#59d1ba','#59d1bb','#a5d36e']),
+                            .domain([50000,700000,800000,1000000,2000000,2500000]) .range(['#e86e6b','#e86e6c','#fcd56b','#59d1ba','#59d1bb','#a5d36e']),
         // This is a different margin than the one for the chart
         // Setting the gradient stops from 0% to 100% will cause wrong color ranges
         // Because data points are positioned in the center of containing rect
