@@ -1,7 +1,7 @@
 function wordcloud(selector, url, weight) {
   var width = 500, // changed
       height =500;
-  var fill = d3.scaleOrdinal(d3.schemeCategory20);
+  var fill = d3.scale.category20();
   d3.csv(url, function(d) {
       return {
         text: d.word,

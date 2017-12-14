@@ -9,10 +9,13 @@
 
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
 
-  <link rel="stylesheet" href="static/css/analysis_style.css">
+  <!-- <link rel="stylesheet" href="static/css/analysis_style.css"> -->
   <link rel="stylesheet" href="static/css/analysis_scrollspy.css">
   <link rel="stylesheet" href="static/css/analysis_base.css">
   <link rel="stylesheet" href="static/css/spark_style.css">
+
+  <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7/leaflet.css"/>
+
 </head>
 
 <body class="container">
@@ -202,19 +205,14 @@
 
   <p> 친구 중 한명이 학교가 송도에 있어서 4년 전에 놀러 갔던 기억이 나네요. 그때만 해도 송도라는 지역이 너무 생소했고 실제 사람들도 별로 안 보여 휑했던 것 같아요. 그 당시에 친구가 과외나 학원 등에서 아르바이트를 하려 해도 교육 인프라가 부족하고, 큰 마트도 없어 많이 불평 했던 게 생각이 납니다. 그렇다면 현재 송도는 어떻게 바뀌었을까요?</p>
 
-  <div class="mapChart d-flex flex-row">
-    <div>
-      <h4>전</h4>
-      <img src="static/images/map_prev.png" alt="bumpchart prev">
-    </div>
-    <div>
-      <h4>중</h4>
-      <img src="static/images/map_dur.png" alt="bumpchart during">
-    </div>
-    <div>
-      <h4>후</h4>
-      <img src="static/images/map_aft.png" alt="bumpchart after">
-    </div>
+  <div>
+    <input type="range" value="0" min="0" max="2" id="opdateFilter" list="tickmarks">
+    <datalist id="tickmarks">
+      <option value="0"></option>
+      <option value="1"></option>
+      <option value="2"></option>
+    </datalist>
+    <div id="map" style="width: 600px; height: 430px"></div>
   </div>
 
   <h1>마무리 제목 넣기</h1>
@@ -255,10 +253,9 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
 
-<!-- <script src="https://d3js.org/d3-hierarchy.v1.min.js"></script>
-<script src="https://d3js.org/d3.v3.min.js"></script> -->
-<script src="https://d3js.org/d3.v4.min.js"></script>
+<script src="https://d3js.org/d3.v3.min.js"></script>
 <script src="static/js/analysis_jquery.min.js"></script>
+<script src="static/js/leaflet.js"></script>
 <script src="static/js/analysis_d3.layout.cloud.js"></script>
 <script src="static/js/analysis_wordcloud.js"></script>
 
@@ -271,6 +268,7 @@ wordcloud('#cloud3', 'static/data/count_noun_1617.csv', 0.0017);
 
 <script  src="static/js/spark_index.js"></script>
 <script src="static/js/analysis_scrollspy.js"></script>
+<script src="static/js/analysis_map.js"></script>
 
 </body>
 </html>
