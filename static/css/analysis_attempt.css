@@ -1,6 +1,7 @@
 body {
   position: relative;
   margin: 0;
+  margin-top:56px;
 }
 
 .jg{font-family: 'Jeju Gothic', sans-serif;}
@@ -43,7 +44,6 @@ body {
   background-color: #69BAC2;
 }
 .slide header{
-  color:white;
   max-width: 80%;
   position: relative;
   left:50%;
@@ -77,7 +77,7 @@ body {
 }
 
 .navbar-nav {
-  justify-content: flex-end;
+  justify-content:flex-end !important;
 }
 
 /* wordclouds */
@@ -105,6 +105,24 @@ img {
   max-width: 100%;
 }
 
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 0.8em;
+  margin-bottom: 0.8em;
+  text-align:center;
+}
+
 p {
   margin-bottom: 20px;
+}
+
+/*framwork*/
+
+.framework1 {
+  margin-top: 30px;
+  background-color: white;
+  border-radius: 10px;
+}
+
+.framework1 #carouselExampleControls {
+  margin-top: 10px;
 }
