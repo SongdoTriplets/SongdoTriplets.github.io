@@ -119,6 +119,8 @@ h1, h2, h3, h4, h5, h6 {
 p {
   margin-top: 20px;
   margin-bottom: 20px;
+  margin-left: 20px;
+  margin-right:20px;
 }
 
 /*framwork*/
@@ -171,19 +173,12 @@ section {
   margin: 20px auto;
 }
 
-#sectionfive {
-  background-color: #A6A6A6;
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
 #sectionfive div.container{
-  background-color: white;
+  background-color: #E2E2E2;
+  margin-top: 20px;
+  margin-bottom: 20px;
   border-radius: 10px;
-  padding: 20px;
+  padding: 10px;
 }
 
 .sparklines_total {
@@ -196,17 +191,17 @@ section {
   margin: 0 auto;
 }
 
-#sectionsix {
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
 #sectionsix div.container {
   background-color: white;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 20px;
   border-radius: 10px;
+}
+
+#P_reamore04 {
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
 
 

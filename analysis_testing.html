@@ -122,10 +122,10 @@
   <!-- start not yet -->
   <section id="sectionsix" class="slide five">
   <div class="container">
-    <div id="carouselExampleControls_many" class="carousel slide" data-ride="carousel">
+    <div id="carouselExampleControls_many" class="carousel" data-ride="carousel">
       <div class="carousel-inner">
         <div class="carousel-item active">
-          <h4>분석 순서</h4>
+          <h2>분석 순서</h2>
           <img class="d-block w-100" src="static/images/explanation.png" alt="유령도시 송도">
           <div class="carousel-caption d-none d-md-block">
           </div>
@@ -193,29 +193,36 @@
 
   <section id="sectionseven" class="slide six">
   <div class="container">
-    <h2>범프 차트</h2>
-    <div id="sparkline_franchise"></div>
-    <p>범프차트로 다시 한번 확인을 해보면 아까 워드클라우드로 나왔던 양상이 좀 더 요약되서 보여지는 것을 알 수 있습니다. </p>
+    <div class="row">
+      <div class="col-2"></div>
+      <div class="col-8">
+        <h2>범프 차트</h2>
+        <div class="sparkline_franchise"></div>
+      </div>
+      <p>범프차트로 다시 한번 확인을 해보면 아까 워드클라우드로 나왔던 양상이 좀 더 요약되서 보여지는 것을 알 수 있습니다. </p>
+    </div>
   </div>
   </section> <!--slide 6 end-->
-  </div> <!--section 2 end-->
 
-  <div>
   <section id="sectioneight" class="slide seven">
-  <div class="col-sm"></div>
   <div class="container">
-    <h1>얼마나 늘었을까요?</h1>
-
-    <h4>송도 프렌차이즈 개수</h4>
-    <div class="sparkline_franchise"></div>
-
+    <div class="row">
+    <div class="col-2"></div>
+    <div class="col-8">
+      <h1>얼마나 늘었을까요?</h1>
+      <h4>송도 프렌차이즈 개수</h4>
+      <div class="sparkline_franchise"></div>
+    </div>
     <p> 친구 중 한명이 학교가 송도에 있어서 4년 전에 놀러 갔던 기억이 나네요. 그때만 해도 송도라는 지역이 너무 생소했고 실제 사람들도 별로 안 보여 휑했던 것 같아요. 그 당시에 친구가 과외나 학원 등에서 아르바이트를 하려 해도 교육 인프라가 부족하고, 큰 마트도 없어 많이 불평 했던 게 생각이 납니다. 그렇다면 현재 송도는 어떻게 바뀌었을까요?</p>
+  </div>
   </div>
   </section> <!--slide 7 end-->
 
   <section id="sectionnine" class="slide seven_1">
   <div class="container">
-    <div>
+    <div class="row">
+      <div class="col-2"></div>
+      <div class="col-8">
       <h2>송도 프랜차이즈 맵: 전, 중 후</h2>
       <input type="range" value="0" min="0" max="2" id="opdateFilter" list="tickmarks">
       <datalist id="tickmarks">
@@ -224,6 +231,7 @@
         <option value="2"></option>
       </datalist>
       <div id="map"></div>
+    </div>
     </div>
   </div>
   </section> <!--slide 7-1 end-->
