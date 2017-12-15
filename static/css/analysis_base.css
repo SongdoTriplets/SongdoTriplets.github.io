@@ -1,15 +1,24 @@
+#carouselExampleControls{
+  margin-top: 10vh;
+}
+
 .nav {
   background-color: white;
   z-index: 1000;
 }
 
-body {
+/*body {
   position: relative;
   top: 42px;
-}
+}*/
 
 .sticky-top {
   top: 42px;
+}
+
+.wordclouds {
+  max-width: 100%;
+  max-height: 100%;
 }
 
 .wordclouds @font-face{
@@ -20,10 +29,14 @@ body {
        url('//cdn.jsdelivr.net/korean-webfonts/1/corps/godo/Godo/GodoM.woff') format('woff');
     }
 .wordclouds text:hover {
-
     stroke: black;
     stroke-width: 1.5px;
   }
+
+img {
+  max-width: 100%;
+  max-height: 100%;
+}
 
 /*
   .carousel-control-next-icon {

@@ -1,0 +1,68 @@
+.jg{font-family: 'Jeju Gothic', sans-serif;}
+
+body {
+  margin: 0;
+}
+.slide {
+  height: 100vh;
+  overflow: hidden;
+  background-attachment: fixed;
+  background-size: cover;
+  /*font-family: 'Source Sans Pro', sans-serif;*/
+  /*font-weight: 200;*/
+}
+
+.slide.one{
+  background-color: #6F6F6F;
+}
+.slide.two{
+  background-color: #A6A6A6;
+}
+.slide.three{
+  background-color: #E2E2E2;
+}
+.slide.three_1{
+  background-color: #E2E2E2;
+}
+.slide.four{
+  background-color: #FFFFFF;
+}
+.slide.five{
+  background-color: #E8FCFF;
+}
+.slide.six{
+  background-color: #BBF4F9;
+}
+.slide.seven{
+  background-color: #91DBE2;
+}
+.slide.seven_1{
+  background-color: #91DBE2;
+}
+.slide.eight{
+  background-color: #69BAC2;
+}
+
+.slide header{
+  color:white;
+  max-width: 80%;
+  position: relative;
+  left:50%;
+  top:50%;
+  transform:translateX(-50%) translateY(-50%);
+  font-size:1.5rem;
+  text-align: center;
+}
+.slide header h1{
+  font-size:2rem;
+  margin-bottom: 1rem;
+  font-weight: 300;
+}
+.slide header h1:after{
+  content:'';
+  border-bottom:1px solid white;
+  width:8rem;
+  display: block;
+  margin:0 auto;
+  margin-top:1rem;
+}
