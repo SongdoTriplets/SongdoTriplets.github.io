@@ -24,6 +24,7 @@ body {
 }
 .slide.three_1{
   background-color: #E2E2E2;
+  height: 60vh;
 }
 .slide.four{
   background-color: #FFFFFF;
@@ -44,6 +45,12 @@ body {
   background-color: #69BAC2;
 }
 .slide header{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  border-radius: 10px;
+  min-height: 50vh;
   max-width: 80%;
   position: relative;
   left:50%;
@@ -140,6 +147,27 @@ section {
   padding: 0 10px;
 }
 
-#songdo-reason-description {
+.songdo-description {
   padding: 0 15px;
+}
+
+#sectiontwo {
+  display: flex;
+  -ms-align-items: center;
+  align-items: center;
+}
+#sectiontwo img {
+  border-radius: 10px;
+}
+
+#sectionthree {
+  display: flex;
+  align-items: center;
+}
+#wordcloud-container {
+  width: 97%;
+  background-color: white;
+  border-radius: 10px;
+  padding-top: 10px;
+  margin: 20px auto;
 }
