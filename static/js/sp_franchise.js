@@ -82,13 +82,11 @@ $('.sparkline_franchise').each(function(sparklineId) {
 
 
         ];
-  		 console.log(data);
         var parseDate = d3.time.format("%b-%Y");
 
         data.forEach(function(d) {
             d.date = parseDate.parse(d.date);
             d.value = +d.value;
-            console.log(d.date)
         });
 
 
@@ -227,7 +225,6 @@ $('.sparkline_franchise').each(function(sparklineId) {
       });
   	    var tooltipLeft = $tooltip.data("calcX")(data[i].date) - ($tooltip.width() / 2);
         var tooltipTop = $tooltip.data("calcY")(data[i].value) - 30;
-      console.log(tooltipLeft);
         // Position it again
         $tooltip.css({
             left: tooltipLeft + "px",
