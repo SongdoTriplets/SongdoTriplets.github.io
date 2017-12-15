@@ -3,7 +3,7 @@ var map = L.map('map').setView([37.38748, 126.6470], 13);
     mapLink = '<a href="http://openstreetmap.org">OpenStreetMap</a>';
 
     L.tileLayer(
-        'http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        'https://{s}.tile.thunderforest.com/neighbourhood/{z}/{x}/{y}.png?apikey=3c2e1455566d4fb68c550e42b255c329', {
         attribution: '&copy; ' + mapLink + ' Contributors',
         maxZoom: 18,
         }).addTo(map);

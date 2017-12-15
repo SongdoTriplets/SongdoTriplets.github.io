@@ -11,11 +11,6 @@
   <link rel="stylesheet" href="static/css/analysis_base.css">
   <link rel="stylesheet" href="static/css/analysis_leaflet.css">
   <!--sparklines-->
-  <link rel="stylesheet" href="static/css/sp_search.css">
-  <link rel="stylesheet" href="static/css/sp_sale.css">
-  <link rel="stylesheet" href="static/css/sp_blog.css">
-  <link rel="stylesheet" href="static/css/sp_population.css">
-  <link rel="stylesheet" href="static/css/sp_floatingPop.css">
   <link rel="stylesheet" href="static/css/sp_franchise.css">
 
 </head>
@@ -23,7 +18,7 @@
 <body class="container">
 
   <ul id="top-menu">
-    <a class="right" id="tohome">Songdo</a>
+    <a class="right" id="tohome" href="/">Songdo</a>
     <li class="active">
       <a href="#sectionone">1</a>
     </li>
@@ -138,18 +133,15 @@
             </div>
           </div>
           <div class="carousel-item">
-            <h4>"신도시" 검색량</h4>
-            <img class="d-block w-100" src="static/images/search_newcity.png" alt="신도시 검색량 그래프">
+            <div id="newCitySearch"></div>
             <div class="carousel-caption d-none d-md-block"></div>
           </div>
           <div class="carousel-item">
-            <h4>"맛집" 검색량</h4>
-            <img class="d-block w-100" src="static/images/search_yummy.png" alt="맛집 검색량 그래프">
+            <div id="withSweety"></div>
             <div class="carousel-caption d-none d-md-block"></div>
           </div>
           <div class="carousel-item">
-            <h4>"오빠랑" 검색량</h4>
-            <img class="d-block w-100" src="static/images/search_oppa.png" alt="오빠랑 검색량 그래프">
+            <div id="yummyumm"></div>
             <div class="carousel-caption d-none d-md-block"></div>
           </div>
           <a class="carousel-control-prev" href="#carouselExampleControls_many" role="button" data-slide="prev">
@@ -274,12 +266,12 @@
   <script src="static/js/analysis_map.js"></script>
   <script src="static/js/analysis_BumpChart.js"></script>
   <!-- sparklines -->
-  <script src="static/js/sp_blog.js"></script>
-  <script src="static/js/sp_floatingPop.js"></script>
   <script src="static/js/sp_franchise.js"></script>
-  <script src="static/js/sp_population.js"></script>
-  <script src="static/js/sp_sale.js"></script>
-  <script src="static/js/sp_search.js"></script>
+
+  <script src="static/js/newCitySearch.js"></script>
+  <script src="static/js/withSweety.js"></script>
+  <script src="static/js/yummyumm.js"></script>
+
 
 </body>
 </html>

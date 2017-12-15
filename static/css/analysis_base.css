@@ -20,7 +20,9 @@ body {
        url('//cdn.jsdelivr.net/korean-webfonts/1/corps/godo/Godo/GodoM.woff') format('woff');
     }
 .wordclouds text:hover {
-      stroke: black;
+
+    stroke: black;
+    stroke-width: 1.5px;
   }
 
 /*
