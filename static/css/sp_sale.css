@@ -1,4 +1,4 @@
-.sparkline_franchise {
+.sparkline_sale {
   background-color: #333;
 }
 
@@ -44,7 +44,7 @@
   font-size: 12px;
 }
 
-.sparkline_franchise {
+.sparkline_sale {
   width: 708px ;
   height: 250px ;
   max-width: 100%;
@@ -54,52 +54,52 @@
   position: relative;
 }
 
-.sparkline_franchise * {
+.sparkline_sale * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
 
-.sparkline_franchise path {
+.sparkline_sale path {
   stroke-width: 3;
   fill: none;
 }
 
-.sparkline_franchise path.area {
+.sparkline_sale path.area {
   stroke-width: 0;
   fill: red;
 }
 
-.sparkline_franchise .point {
+.sparkline_sale .point {
   stroke-width: 2;
   -webkit-transition: all .3s;
   transition: all .3s;
   opacity: 0;
 }
 
-.sparkline_franchise .point.end {
+.sparkline_sale .point.end {
   opacity: 1;
 }
 
-.sparkline_franchise .bar-rect {
+.sparkline_sale .bar-rect {
   fill: transparent;
   stroke: none;
 }
 
-.sparkline_franchise .point.hover {
+.sparkline_sale .point.hover {
   stroke-width: 7;
   opacity: 1;
 }
 
-.sparkline_franchise .point.end.hover {
+.sparkline_sale .point.end.hover {
   stroke-width: 5;
   opacity: 1;
 }
 
-.sparkline_franchise .chart-container {
+.sparkline_sale .chart-container {
   position: relative;
 }
 
-.sparkline_franchise .chart-tooltip {
+.sparkline_sale .chart-tooltip {
   position: absolute;
   background: white;
   color: #999;
@@ -114,18 +114,18 @@
   -webkit-transition: .25s;
 }
 
-.sparkline_franchise .chart-tooltip .title {
+.sparkline_sale .chart-tooltip .title {
   z-index: 3;
   text-transform: uppercase;
   font-size: 13px;
 }
 
-.sparkline_franchise .chart-tooltip.hover {
+.sparkline_sale .chart-tooltip.hover {
   margin-top: -10px;
   opacity: 1;
 }
 
-.sparkline_franchise .chart-tooltip:after {
+.sparkline_sale .chart-tooltip:after {
   content: '';
   position: absolute;
   top: 100%;
@@ -137,7 +137,7 @@
   border-top: 5px solid white;
 }
 
-.sparkline_franchise .bullet {
+.sparkline_sale .bullet {
   width: 8px;
   height: 8px;
   border-radius: 50%;

@@ -1,4 +1,4 @@
-.sparkline_franchise {
+.sparkline_population {
   background-color: #333;
 }
 
@@ -44,7 +44,7 @@
   font-size: 12px;
 }
 
-.sparkline_franchise {
+.sparkline_population {
   width: 708px ;
   height: 250px ;
   max-width: 100%;
@@ -54,52 +54,52 @@
   position: relative;
 }
 
-.sparkline_franchise * {
+.sparkline_population * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
 
-.sparkline_franchise path {
+.sparkline_population path {
   stroke-width: 3;
   fill: none;
 }
 
-.sparkline_franchise path.area {
+.sparkline_population path.area {
   stroke-width: 0;
   fill: red;
 }
 
-.sparkline_franchise .point {
+.sparkline_population .point {
   stroke-width: 2;
   -webkit-transition: all .3s;
   transition: all .3s;
   opacity: 0;
 }
 
-.sparkline_franchise .point.end {
+.sparkline_population .point.end {
   opacity: 1;
 }
 
-.sparkline_franchise .bar-rect {
+.sparkline_population .bar-rect {
   fill: transparent;
   stroke: none;
 }
 
-.sparkline_franchise .point.hover {
+.sparkline_population .point.hover {
   stroke-width: 7;
   opacity: 1;
 }
 
-.sparkline_franchise .point.end.hover {
+.sparkline_population .point.end.hover {
   stroke-width: 5;
   opacity: 1;
 }
 
-.sparkline_franchise .chart-container {
+.sparkline_population .chart-container {
   position: relative;
 }
 
-.sparkline_franchise .chart-tooltip {
+.sparkline_population .chart-tooltip {
   position: absolute;
   background: white;
   color: #999;
@@ -114,18 +114,18 @@
   -webkit-transition: .25s;
 }
 
-.sparkline_franchise .chart-tooltip .title {
+.sparkline_population .chart-tooltip .title {
   z-index: 3;
   text-transform: uppercase;
   font-size: 13px;
 }
 
-.sparkline_franchise .chart-tooltip.hover {
+.sparkline_population .chart-tooltip.hover {
   margin-top: -10px;
   opacity: 1;
 }
 
-.sparkline_franchise .chart-tooltip:after {
+.sparkline_population .chart-tooltip:after {
   content: '';
   position: absolute;
   top: 100%;
@@ -137,7 +137,7 @@
   border-top: 5px solid white;
 }
 
-.sparkline_franchise .bullet {
+.sparkline_population .bullet {
   width: 8px;
   height: 8px;
   border-radius: 50%;
