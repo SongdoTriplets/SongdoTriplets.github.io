@@ -256,3 +256,21 @@ section {
   border-radius: 10px;
   padding: 20px;
 }
+
+#sectionten.container {
+  background-color: white;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+#tripletPix {
+  display: block;
+  margin: 0 auto;
+  border-radius: 10px;
+}
+
+#toabout {
+  width: 100%;
+  padding: 20px;
+  background-color: #69BAC2;
+}
